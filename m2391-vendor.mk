@@ -1036,6 +1036,24 @@ PRODUCT_COPY_FILES += \
     vendor/meizu/m2391/proprietary/vendor_dlkm/lib/modules/system_dlkm.modules.blocklist:$(TARGET_COPY_OUT_VENDOR_DLKM)/lib/modules/system_dlkm.modules.blocklist
 
 PRODUCT_PACKAGES += \
+    android.hardware.audio.common-util \
+    android.hardware.audio.common@2.0-util \
+    android.hardware.audio.common@4.0-util \
+    android.hardware.audio.common@5.0-util \
+    android.hardware.audio.common@6.0-util \
+    android.hardware.audio.common@7.0-util \
+    android.hardware.audio.common@7.1-util \
+    android.hardware.audio.effect@2.0-util \
+    android.hardware.audio.effect@4.0-util \
+    android.hardware.audio.effect@5.0-util \
+    android.hardware.audio.effect@6.0-util \
+    android.hardware.audio.effect@7.0-util \
+    android.hardware.audio@2.0-util \
+    android.hardware.audio@4.0-util \
+    android.hardware.audio@5.0-util \
+    android.hardware.audio@6.0-util \
+    android.hardware.audio@7.0-util \
+    android.hardware.audio@7.1-util \
     android.hardware.camera.provider@2.4-external \
     android.hardware.camera.provider@2.4-legacy \
     android.hardware.secure_element@1.0-impl \
