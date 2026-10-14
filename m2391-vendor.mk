@@ -202,7 +202,6 @@ PRODUCT_COPY_FILES += \
     vendor/meizu/m2391/proprietary/vendor/etc/iAmCdRom.iso:$(TARGET_COPY_OUT_VENDOR)/etc/iAmCdRom.iso \
     vendor/meizu/m2391/proprietary/vendor/etc/init.qti.fm.sh:$(TARGET_COPY_OUT_VENDOR)/etc/init.qti.fm.sh \
     vendor/meizu/m2391/proprietary/vendor/etc/init/android.hardware.atrace@1.0-service.m2391.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.atrace@1.0-service.m2391.rc \
-    vendor/meizu/m2391/proprietary/vendor/etc/init/android.hardware.audio.service_64.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.audio.service_64.rc \
     vendor/meizu/m2391/proprietary/vendor/etc/init/android.hardware.bluetooth@1.1-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.bluetooth@1.1-service-qti.rc \
     vendor/meizu/m2391/proprietary/vendor/etc/init/android.hardware.boot@1.2-service.m2391.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.boot@1.2-service.m2391.rc \
     vendor/meizu/m2391/proprietary/vendor/etc/init/android.hardware.camera.provider@2.4-external-service.m2391.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.camera.provider@2.4-external-service.m2391.rc \
@@ -1036,24 +1035,6 @@ PRODUCT_COPY_FILES += \
     vendor/meizu/m2391/proprietary/vendor_dlkm/lib/modules/system_dlkm.modules.blocklist:$(TARGET_COPY_OUT_VENDOR_DLKM)/lib/modules/system_dlkm.modules.blocklist
 
 PRODUCT_PACKAGES += \
-    android.hardware.audio.common-util \
-    android.hardware.audio.common@2.0-util \
-    android.hardware.audio.common@4.0-util \
-    android.hardware.audio.common@5.0-util \
-    android.hardware.audio.common@6.0-util \
-    android.hardware.audio.common@7.0-util \
-    android.hardware.audio.common@7.1-util \
-    android.hardware.audio.effect@2.0-util \
-    android.hardware.audio.effect@4.0-util \
-    android.hardware.audio.effect@5.0-util \
-    android.hardware.audio.effect@6.0-util \
-    android.hardware.audio.effect@7.0-util \
-    android.hardware.audio@2.0-util \
-    android.hardware.audio@4.0-util \
-    android.hardware.audio@5.0-util \
-    android.hardware.audio@6.0-util \
-    android.hardware.audio@7.0-util \
-    android.hardware.audio@7.1-util \
     android.hardware.camera.provider@2.4-external \
     android.hardware.camera.provider@2.4-legacy \
     android.hardware.secure_element@1.0-impl \
@@ -1236,17 +1217,6 @@ PRODUCT_PACKAGES += \
     libq3dtools_adreno \
     libq3dtools_esx \
     ftm_fm_lib \
-    android.hardware.audio.effect@2.0-impl \
-    android.hardware.audio.effect@4.0-impl \
-    android.hardware.audio.effect@5.0-impl \
-    android.hardware.audio.effect@6.0-impl \
-    android.hardware.audio.effect@7.0-impl \
-    android.hardware.audio@2.0-impl \
-    android.hardware.audio@4.0-impl \
-    android.hardware.audio@5.0-impl \
-    android.hardware.audio@6.0-impl \
-    android.hardware.audio@7.0-impl \
-    android.hardware.audio@7.1-impl \
     android.hardware.bluetooth.audio-impl-qti \
     android.hardware.bluetooth@1.0-impl-qti \
     android.hardware.bluetooth@1.1-impl-qti \
@@ -1259,10 +1229,7 @@ PRODUCT_PACKAGES += \
     android.hardware.soundtrigger@2.2-impl \
     android.hardware.soundtrigger@2.3-impl \
     audio.bluetooth_qti.default \
-    audio.primary.default \
     audio.primary.kalama \
-    audio.r_submix.default \
-    audio.usb.default \
     audio.virtual.default \
     camera.qcom \
     com.dsi.ant@1.0-impl \
@@ -2300,7 +2267,6 @@ PRODUCT_PACKAGES += \
     hdcp2p2prov \
     hostapd_cli \
     android.hardware.atrace@1.0-service \
-    android.hardware.audio.service_64 \
     android.hardware.bluetooth@1.1-service-qti \
     android.hardware.boot@1.2-service \
     android.hardware.camera.provider@2.4-external-service \
