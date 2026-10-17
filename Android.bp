@@ -48810,7 +48810,7 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "liblog",
                 "libmpbase",
-                "libdualcam_video_optical_zoom",
+                "libtriplecam_video_optical_zoom",
                 "libcutils",
                 "libcamera_metadata",
                 "libchilog",
