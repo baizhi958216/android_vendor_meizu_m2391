@@ -280,7 +280,6 @@ PRODUCT_COPY_FILES += \
     vendor/meizu/m2391/proprietary/vendor/etc/init/vendor.meizu.hardware.meizu_kelog@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.meizu.hardware.meizu_kelog@1.0-service.rc \
     vendor/meizu/m2391/proprietary/vendor/etc/init/vendor.meizu.hardware.qsh_geofence-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.meizu.hardware.qsh_geofence-service.rc \
     vendor/meizu/m2391/proprietary/vendor/etc/init/vendor.meizu.hardware.tiktap_hidl@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.meizu.hardware.tiktap_hidl@1.0-service.rc \
-    vendor/meizu/m2391/proprietary/vendor/etc/init/vendor.meizu.ir@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.meizu.ir@1.0-service.rc \
     vendor/meizu/m2391/proprietary/vendor/etc/init/vendor.meizu.mpower_manager.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.meizu.mpower_manager.rc \
     vendor/meizu/m2391/proprietary/vendor/etc/init/vendor.meizu.sensor_aux@1.0-default-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.meizu.sensor_aux@1.0-default-service.rc \
     vendor/meizu/m2391/proprietary/vendor/etc/init/vendor.nxp.hardware.nfc@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.nxp.hardware.nfc@2.0-service.rc \
@@ -2201,7 +2200,6 @@ PRODUCT_PACKAGES += \
     vendor.meizu.hardware.meizu_kelog@1.0-service \
     vendor.meizu.hardware.qsh_geofence-service \
     vendor.meizu.hardware.tiktap_hidl@1.0-service \
-    vendor.meizu.ir@1.0-service \
     vendor.meizu.sensor_aux@1.0-default-service \
     vendor.nxp.hardware.nfc@2.0-service \
     vendor.qti.camera.provider-service_64 \
