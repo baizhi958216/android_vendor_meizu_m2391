@@ -7685,80 +7685,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "android.hardware.graphics.mapper@4.0-impl-qti-display",
-    owner: "meizu",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/hw/android.hardware.graphics.mapper@4.0-impl-qti-display.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libutils",
-                "libhidlbase",
-                "libgrallocutils",
-                "libgralloccore",
-                "libgralloctypes",
-                "libsync",
-                "vendor.qti.hardware.display.mapper@3.0",
-                "vendor.qti.hardware.display.mapper@4.0",
-                "vendor.qti.hardware.display.mapperextensions@1.0",
-                "android.hardware.graphics.mapper@2.0",
-                "android.hardware.graphics.mapper@2.1",
-                "vendor.qti.hardware.display.mapperextensions@1.1",
-                "android.hardware.graphics.mapper@3.0",
-                "android.hardware.graphics.mapper@4.0",
-                "libdmabufheap",
-                "vendor.qti.hardware.display.mapperextensions@1.2",
-                "vendor.qti.hardware.display.mapperextensions@1.3",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/hw/android.hardware.graphics.mapper@4.0-impl-qti-display.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libutils",
-                "libhidlbase",
-                "libgrallocutils",
-                "libgralloccore",
-                "libgralloctypes",
-                "libsync",
-                "vendor.qti.hardware.display.mapper@3.0",
-                "vendor.qti.hardware.display.mapper@4.0",
-                "vendor.qti.hardware.display.mapperextensions@1.0",
-                "android.hardware.graphics.mapper@2.0",
-                "android.hardware.graphics.mapper@2.1",
-                "vendor.qti.hardware.display.mapperextensions@1.1",
-                "android.hardware.graphics.mapper@3.0",
-                "android.hardware.graphics.mapper@4.0",
-                "libdmabufheap",
-                "vendor.qti.hardware.display.mapperextensions@1.2",
-                "vendor.qti.hardware.display.mapperextensions@1.3",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    relative_install_path: "hw",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "audio.bluetooth_qti.default",
     owner: "meizu",
     strip: {
@@ -11880,76 +11806,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libdisplayconfig.qti",
-    owner: "meizu",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libdisplayconfig.qti.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libhidlbase",
-                "libutils",
-                "vendor.display.config@2.0",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libdisplayconfig.qti.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libhidlbase",
-                "libutils",
-                "vendor.display.config@2.0",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libdisplaydebug",
-    owner: "meizu",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libdisplaydebug.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libdisplayqos",
     owner: "meizu",
     strip: {
@@ -12120,35 +11976,6 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libQSEEComAPI",
                 "libtime_genoff",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libdrmutils",
-    owner: "meizu",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libdrmutils.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libutils",
-                "libdrm",
-                "libdisplaydebug",
                 "libc++",
                 "libc",
                 "libm",
@@ -12668,36 +12495,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libfilefinder",
-    owner: "meizu",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libfilefinder.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libutils",
-                "libdisplaydebug",
-                "vendor.qti.hardware.display.demura@2.0",
-                "libhidlbase",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libgame_enhance",
     owner: "meizu",
     strip: {
@@ -12934,59 +12731,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libgpu_tonemapper",
-    owner: "meizu",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libgpu_tonemapper.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libEGL",
-                "libGLESv2",
-                "libGLESv3",
-                "libgrallocutils",
-                "libhidlbase",
-                "libui",
-                "libutils",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libgpu_tonemapper.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libEGL",
-                "libGLESv2",
-                "libGLESv3",
-                "libgrallocutils",
-                "libhidlbase",
-                "libui",
-                "libutils",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libgpudataproducer",
     owner: "meizu",
     strip: {
@@ -13013,171 +12757,6 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "liblog",
                 "libz",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libgralloc.qti",
-    owner: "meizu",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libgralloc.qti.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libutils",
-                "libgralloctypes",
-                "libhidlbase",
-                "libhardware",
-                "android.hardware.graphics.mapper@4.0",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libgralloc.qti.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libutils",
-                "libgralloctypes",
-                "libhidlbase",
-                "libhardware",
-                "android.hardware.graphics.mapper@4.0",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libgralloccore",
-    owner: "meizu",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libgralloccore.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libutils",
-                "libgrallocutils",
-                "libgralloctypes",
-                "libgralloc.qti",
-                "libhidlbase",
-                "libion",
-                "libdmabufheap",
-                "libvmmem",
-                "android.hardware.graphics.mapper@2.1",
-                "android.hardware.graphics.mapper@3.0",
-                "android.hardware.graphics.mapper@4.0",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libgralloccore.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libutils",
-                "libgrallocutils",
-                "libgralloctypes",
-                "libgralloc.qti",
-                "libhidlbase",
-                "libion",
-                "libdmabufheap",
-                "libvmmem",
-                "android.hardware.graphics.mapper@2.1",
-                "android.hardware.graphics.mapper@3.0",
-                "android.hardware.graphics.mapper@4.0",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libgrallocutils",
-    owner: "meizu",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libgrallocutils.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libutils",
-                "libgralloctypes",
-                "libhidlbase",
-                "android.hardware.graphics.common@1.2",
-                "android.hardware.graphics.mapper@2.0",
-                "android.hardware.graphics.mapper@2.1",
-                "android.hardware.graphics.mapper@3.0",
-                "android.hardware.graphics.mapper@4.0",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libgrallocutils.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libutils",
-                "libgralloctypes",
-                "libhidlbase",
-                "android.hardware.graphics.common@1.2",
-                "android.hardware.graphics.mapper@2.0",
-                "android.hardware.graphics.mapper@2.1",
-                "android.hardware.graphics.mapper@3.0",
-                "android.hardware.graphics.mapper@4.0",
                 "libc++",
                 "libc",
                 "libm",
@@ -18224,53 +17803,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libqdMetaData",
-    owner: "meizu",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libqdMetaData.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libutils",
-                "libhidlbase",
-                "libgralloc.qti",
-                "libgralloctypes",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libqdMetaData.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libutils",
-                "libhidlbase",
-                "libgralloc.qti",
-                "libgralloctypes",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libqdcm-algo",
     owner: "meizu",
     strip: {
@@ -18447,39 +17979,6 @@ cc_prebuilt_library_shared {
                 "libutils",
                 "liblog",
                 "libdiag",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libqdutils",
-    owner: "meizu",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libqdutils.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libutils",
-                "libbinder",
-                "libqservice",
-                "libgralloctypes",
-                "android.hardware.graphics.common@1.2",
-                "android.hardware.graphics.mapper@4.0",
-                "libhidlbase",
                 "libc++",
                 "libc",
                 "libm",
@@ -19085,34 +18584,6 @@ cc_prebuilt_library_shared {
                 "libsync",
                 "libbitmlenginev2",
                 "libz",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libqservice",
-    owner: "meizu",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libqservice.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libutils",
-                "libbinder",
                 "libc++",
                 "libc",
                 "libm",
@@ -20179,36 +19650,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libsdedrm",
-    owner: "meizu",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libsdedrm.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libutils",
-                "libdrm",
-                "libdrmutils",
-                "libdisplaydebug",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libsdm-color",
     owner: "meizu",
     strip: {
@@ -20296,71 +19737,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libsdmcore",
-    owner: "meizu",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libsdmcore.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libutils",
-                "libdisplaydebug",
-                "libsdmutils",
-                "libdrm",
-                "libdrmutils",
-                "libsdedrm",
-                "libsdmdal",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libsdmdal",
-    owner: "meizu",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libsdmdal.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libutils",
-                "libdisplaydebug",
-                "libsdmutils",
-                "libdrm",
-                "libdrmutils",
-                "libsdedrm",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libsdmextension",
     owner: "meizu",
     strip: {
@@ -20395,34 +19771,6 @@ cc_prebuilt_library_shared {
                 "android.hardware.thermal@1.0",
                 "android.hardware.thermal@2.0",
                 "libqrtr",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libsdmutils",
-    owner: "meizu",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libsdmutils.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libutils",
-                "libdisplaydebug",
                 "libc++",
                 "libc",
                 "libm",
@@ -29670,35 +29018,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libhistogram",
-    owner: "meizu",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libhistogram.so",
-            ],
-            shared_libs: [
-                "libdrm",
-                "liblog",
-                "libcutils",
-                "libutils",
-                "libbase",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libipanat",
     owner: "meizu",
     strip: {
@@ -36335,151 +35654,6 @@ cc_prebuilt_binary {
                 "libhidlbase",
                 "libxml2",
                 "vendor.qti.hardware.capabilityconfigstore@1.0",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    relative_install_path: "hw",
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "vendor.qti.hardware.display.allocator-service",
-    owner: "meizu",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/hw/vendor.qti.hardware.display.allocator-service",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libutils",
-                "libhidlbase",
-                "libgrallocutils",
-                "libgralloccore",
-                "libgralloctypes",
-                "vendor.qti.hardware.display.allocator@3.0",
-                "vendor.qti.hardware.display.allocator@4.0",
-                "vendor.qti.hardware.display.mapper@3.0",
-                "vendor.qti.hardware.display.mapper@4.0",
-                "android.hardware.graphics.mapper@4.0",
-                "android.hardware.graphics.mapper@3.0",
-                "android.hardware.graphics.mapper@2.1",
-                "android.hardware.graphics.allocator@4.0",
-                "android.hardware.graphics.allocator@3.0",
-                "vendor.qti.hardware.display.mapperextensions@1.0",
-                "vendor.qti.hardware.display.mapperextensions@1.1",
-                "libdmabufheap",
-                "vendor.qti.hardware.display.mapperextensions@1.2",
-                "vendor.qti.hardware.display.mapperextensions@1.3",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    relative_install_path: "hw",
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "vendor.qti.hardware.display.composer-service",
-    owner: "meizu",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/hw/vendor.qti.hardware.display.composer-service",
-            ],
-            shared_libs: [
-                "libbinder",
-                "libhardware",
-                "libhistogram",
-                "libutils",
-                "libcutils",
-                "libsync",
-                "libhidlbase",
-                "liblog",
-                "libfmq",
-                "libhardware_legacy",
-                "libsdmcore",
-                "libqservice",
-                "libdisplaydebug",
-                "libsdmutils",
-                "libui",
-                "libgpu_tonemapper",
-                "libEGL",
-                "libGLESv2",
-                "libGLESv3",
-                "vendor.qti.hardware.display.composer@3.0",
-                "vendor.qti.hardware.display.composer@3.1",
-                "android.hardware.graphics.composer@2.1",
-                "android.hardware.graphics.composer@2.2",
-                "android.hardware.graphics.composer@2.3",
-                "android.hardware.graphics.composer@2.4",
-                "android.hardware.graphics.mapper@4.0",
-                "android.hardware.graphics.allocator@4.0",
-                "vendor.qti.hardware.display.mapper@4.0",
-                "libgralloc.qti",
-                "libgralloctypes",
-                "libdisplayconfig.qti",
-                "libdrm",
-                "libbinder_ndk",
-                "android.hardware.common-V2-ndk",
-                "vendor.qti.hardware.display.config-V4-ndk",
-                "vendor.qti.hardware.display.demura@2.0",
-                "vendor.qti.hardware.display.mapperextensions@1.1",
-                "vendor.qti.hardware.display.mapperextensions@1.2",
-                "vendor.qti.hardware.display.mapperextensions@1.3",
-                "libgrallocutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    relative_install_path: "hw",
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "vendor.qti.hardware.display.demura-service",
-    owner: "meizu",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/hw/vendor.qti.hardware.display.demura-service",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libutils",
-                "libbinder",
-                "libhidlbase",
-                "libfilefinder",
-                "libdisplaydebug",
-                "libsdmutils",
-                "vendor.qti.hardware.display.demura@2.0",
                 "libc++",
                 "libc",
                 "libm",

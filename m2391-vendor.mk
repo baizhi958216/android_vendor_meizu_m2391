@@ -25,7 +25,6 @@ PRODUCT_COPY_FILES += \
     vendor/meizu/m2391/proprietary/vendor/bin/init.qcom.sensors.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.qcom.sensors.sh \
     vendor/meizu/m2391/proprietary/vendor/bin/init.qcom.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.qcom.sh \
     vendor/meizu/m2391/proprietary/vendor/bin/init.qcom.usb.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.qcom.usb.sh \
-    vendor/meizu/m2391/proprietary/vendor/bin/init.qti.display_boot.m2391.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.qti.display_boot.m2391.sh \
     vendor/meizu/m2391/proprietary/vendor/bin/init.qti.kernel.debug-kalama.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.qti.kernel.debug-kalama.sh \
     vendor/meizu/m2391/proprietary/vendor/bin/init.qti.kernel.debug.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.qti.kernel.debug.sh \
     vendor/meizu/m2391/proprietary/vendor/bin/init.qti.kernel.early_debug-kalama.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.qti.kernel.early_debug-kalama.sh \
@@ -217,7 +216,6 @@ PRODUCT_COPY_FILES += \
     vendor/meizu/m2391/proprietary/vendor/etc/init/init.media.videofilter.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.media.videofilter.rc \
     vendor/meizu/m2391/proprietary/vendor/etc/init/init.qccvendor.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.qccvendor.rc \
     vendor/meizu/m2391/proprietary/vendor/etc/init/init.qdmastats.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.qdmastats.rc \
-    vendor/meizu/m2391/proprietary/vendor/etc/init/init.qti.display_boot.m2391.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.qti.display_boot.m2391.rc \
     vendor/meizu/m2391/proprietary/vendor/etc/init/init.qti.media.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.qti.media.rc \
     vendor/meizu/m2391/proprietary/vendor/etc/init/init.qti.qcv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.qti.qcv.rc \
     vendor/meizu/m2391/proprietary/vendor/etc/init/init.time_daemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.time_daemon.rc \
@@ -265,9 +263,6 @@ PRODUCT_COPY_FILES += \
     vendor/meizu/m2391/proprietary/vendor/etc/init/vendor.qti.esepowermanager@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.esepowermanager@1.1-service.rc \
     vendor/meizu/m2391/proprietary/vendor/etc/init/vendor.qti.hardware.alarm@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.alarm@1.0-service.rc \
     vendor/meizu/m2391/proprietary/vendor/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc \
-    vendor/meizu/m2391/proprietary/vendor/etc/init/vendor.qti.hardware.display.allocator-service.m2391.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.display.allocator-service.m2391.rc \
-    vendor/meizu/m2391/proprietary/vendor/etc/init/vendor.qti.hardware.display.composer-service.m2391.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.display.composer-service.m2391.rc \
-    vendor/meizu/m2391/proprietary/vendor/etc/init/vendor.qti.hardware.display.demura-service.m2391.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.display.demura-service.m2391.rc \
     vendor/meizu/m2391/proprietary/vendor/etc/init/vendor.qti.hardware.dsp@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.dsp@1.0-service.rc \
     vendor/meizu/m2391/proprietary/vendor/etc/init/vendor.qti.hardware.iop@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.iop@2.0-service.rc \
     vendor/meizu/m2391/proprietary/vendor/etc/init/vendor.qti.hardware.lights.service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.lights.service.rc \
@@ -1071,7 +1066,6 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
     android.hardware.gatekeeper@1.0-impl-qti \
     android.hardware.gnss-aidl-impl-qti \
-    android.hardware.graphics.mapper@4.0-impl-qti-display \
     audio.bluetooth_qti.default \
     audio.virtual.default \
     camera.qcom \
@@ -1198,15 +1192,12 @@ PRODUCT_PACKAGES += \
     libdiagjni \
     libdigital-dimming \
     libdisp-aba \
-    libdisplayconfig.qti \
-    libdisplaydebug \
     libdisplayqos \
     libdisplayskuutils \
     libdpmqmihal \
     libdpps \
     libdrmfs \
     libdrmtime \
-    libdrmutils \
     libdsd2pcm \
     libdsi_netctrl \
     libdsutils \
@@ -1224,7 +1215,6 @@ PRODUCT_PACKAGES += \
     libfastcvopt \
     libfeutils \
     libffmpeg_utils \
-    libfilefinder \
     libgame_enhance \
     libgamepoweroptfeature \
     libgdtap \
@@ -1233,11 +1223,7 @@ PRODUCT_PACKAGES += \
     libgnsspps \
     libgps.utils \
     libgpt \
-    libgpu_tonemapper \
     libgpudataproducer \
-    libgralloc.qti \
-    libgralloccore \
-    libgrallocutils \
     libgsl \
     libhalide_hexagon_host \
     libhdcp1prov \
@@ -1380,14 +1366,12 @@ PRODUCT_PACKAGES += \
     libqcrildataaidl \
     libqcrildatactl \
     libqcrildataqos \
-    libqdMetaData \
     libqdcm-algo \
     libqdcm-json-mode-parser \
     libqdcm-mode-parser \
     libqdi \
     libqdp \
     libqdpr \
-    libqdutils \
     libqisl \
     libqll \
     libqll10 \
@@ -1409,7 +1393,6 @@ PRODUCT_PACKAGES += \
     libqrtrclient \
     libqseed3 \
     libqsegnet \
-    libqservice \
     libqsh_ble_pb \
     libqshcamera \
     libqsocket \
@@ -1446,14 +1429,10 @@ PRODUCT_PACKAGES += \
     libscveObjectSegmentation_stub \
     libscveObjectTracker \
     libscveObjectTracker_stub \
-    libsdedrm \
     libsdm-color \
     libsdm-colormgr-algo \
     libsdm-disp-vndapis \
-    libsdmcore \
-    libsdmdal \
     libsdmextension \
-    libsdmutils \
     libsdsprpc \
     libsensor_calibration \
     libsensorcal \
@@ -1760,7 +1739,6 @@ PRODUCT_PACKAGES += \
     libeai_float \
     libeepromcutter \
     libembmsservice \
-    libhistogram \
     libipanat \
     liblearningmodule \
     liblightninglaunches \
@@ -2030,9 +2008,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.esepowermanager@1.1-service \
     vendor.qti.hardware.alarm@1.0-service \
     vendor.qti.hardware.capabilityconfigstore@1.0-service \
-    vendor.qti.hardware.display.allocator-service \
-    vendor.qti.hardware.display.composer-service \
-    vendor.qti.hardware.display.demura-service \
     vendor.qti.hardware.iop@2.0-service \
     vendor.qti.hardware.lights.service \
     vendor.qti.hardware.limits@1.2-service \
