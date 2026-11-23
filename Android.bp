@@ -10,7 +10,6 @@ soong_namespace {
         "hardware/qcom-caf/thermal",
         "hardware/qcom-caf/wlan",
         "vendor/qcom/opensource/dataservices",
-        "vendor/qcom/opensource/power",
     ],
 }
 
