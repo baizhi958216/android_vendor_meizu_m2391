@@ -13198,104 +13198,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.aks.gamepad@1.0-impl",
-    owner: "meizu",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/hw/vendor.aks.gamepad@1.0-impl.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libhidlbase",
-                "libutils",
-                "vendor.aks.gamepad@1.0",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/hw/vendor.aks.gamepad@1.0-impl.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libhidlbase",
-                "libutils",
-                "vendor.aks.gamepad@1.0",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    relative_install_path: "hw",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.meizu.hardware.tiktap_hidl@1.0-impl",
-    owner: "meizu",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/hw/vendor.meizu.hardware.tiktap_hidl@1.0-impl.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "libutils",
-                "libhardware",
-                "vendor.meizu.hardware.tiktap_hidl@1.0",
-                "liblog",
-                "android.hidl.allocator@1.0",
-                "android.hidl.memory@1.0",
-                "libhidlmemory",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/hw/vendor.meizu.hardware.tiktap_hidl@1.0-impl.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "libutils",
-                "libhardware",
-                "vendor.meizu.hardware.tiktap_hidl@1.0",
-                "liblog",
-                "android.hidl.allocator@1.0",
-                "android.hidl.memory@1.0",
-                "libhidlmemory",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    relative_install_path: "hw",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "vendor.qti.esepowermanager@1.1-impl",
     owner: "meizu",
     strip: {
@@ -36531,49 +36433,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.aks.gamepad@1.0",
-    owner: "meizu",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/vendor.aks.gamepad@1.0.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.aks.gamepad@1.0.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "vendor.display.color@1.0",
     owner: "meizu",
     strip: {
@@ -37277,49 +37136,6 @@ cc_prebuilt_library_shared {
                 "com.qualcomm.qti.dpm.api@1.0",
                 "vendor.qti.hardware.dpmservice@1.0",
                 "vendor.qti.hardware.mwqemadapter@1.0",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.meizu.hardware.tiktap_hidl@1.0",
-    owner: "meizu",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/vendor.meizu.hardware.tiktap_hidl@1.0.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.meizu.hardware.tiktap_hidl@1.0.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
                 "libc++",
                 "libc",
                 "libm",
@@ -47481,32 +47297,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libqsh_geofence",
-    owner: "meizu",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libqsh_geofence.so",
-            ],
-            shared_libs: [
-                "libsnsapi",
-                "libprotobuf-cpp-lite-3.9.1-vendorcompat",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libqsh_utils",
     owner: "meizu",
     strip: {
@@ -48949,34 +48739,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.meizu.hardware.fbase_defrag@1.0",
-    owner: "meizu",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.meizu.hardware.fbase_defrag@1.0.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "vendor.meizu.hardware.fido@2.0",
     owner: "meizu",
     strip: {
@@ -49048,59 +48810,6 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libutils",
                 "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.meizu.hardware.meizu_kelog@1.0",
-    owner: "meizu",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.meizu.hardware.meizu_kelog@1.0.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.meizu.hardware.qsh_geofence-V1-ndk_platform",
-    owner: "meizu",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.meizu.hardware.qsh_geofence-V1-ndk_platform.so",
-            ],
-            shared_libs: [
-                "libbinder_ndk",
                 "libc++",
                 "libc",
                 "libm",
@@ -49719,62 +49428,6 @@ cc_prebuilt_library_shared {
                 "vendor.qti.qesdhal@1.0",
                 "vendor.qti.qesdhal@1.1",
                 "vendor.qti.qesdhal@1.2",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.xingji.hardware.biometrics.face@1.0",
-    owner: "meizu",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.xingji.hardware.biometrics.face@1.0.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.xingji.hardware.qsee.store@1.0",
-    owner: "meizu",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.xingji.hardware.qsee.store@1.0.so",
-            ],
-            shared_libs: [
                 "libhidlbase",
                 "liblog",
                 "libutils",
@@ -53794,39 +53447,6 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-    name: "vendor.aks.gamepad@1.0-service",
-    owner: "meizu",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/hw/vendor.aks.gamepad@1.0-service",
-            ],
-            shared_libs: [
-                "libbinder",
-                "liblog",
-                "libcutils",
-                "libutils",
-                "libhardware",
-                "libhidlbase",
-                "vendor.aks.gamepad@1.0",
-                "vendor.aks.gamepad@1.0-impl",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    relative_install_path: "hw",
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
     name: "vendor.display.color@1.0-service",
     owner: "meizu",
     target: {
@@ -53853,35 +53473,6 @@ cc_prebuilt_binary {
                 "vendor.display.color@1.7",
                 "vendor.display.postproc@1.0",
                 "libsdm-disp-vndapis",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    relative_install_path: "hw",
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "vendor.meizu.hardware.fbase_defrag@1.0-service",
-    owner: "meizu",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/hw/vendor.meizu.hardware.fbase_defrag@1.0-service",
-            ],
-            shared_libs: [
-                "liblog",
-                "libhidlbase",
-                "libutils",
-                "vendor.meizu.hardware.fbase_defrag@1.0",
                 "libc++",
                 "libc",
                 "libm",
@@ -53971,108 +53562,6 @@ cc_prebuilt_binary {
                 "libhidlbase",
                 "libutils",
                 "vendor.meizu.hardware.meizu_charging@1.0",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    relative_install_path: "hw",
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "vendor.meizu.hardware.meizu_kelog@1.0-service",
-    owner: "meizu",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/hw/vendor.meizu.hardware.meizu_kelog@1.0-service",
-            ],
-            shared_libs: [
-                "liblog",
-                "libhidlbase",
-                "libutils",
-                "libz",
-                "libcrypto",
-                "libcutils",
-                "vendor.meizu.hardware.meizu_kelog@1.0",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    relative_install_path: "hw",
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "vendor.meizu.hardware.qsh_geofence-service",
-    owner: "meizu",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/hw/vendor.meizu.hardware.qsh_geofence-service",
-            ],
-            shared_libs: [
-                "vendor.meizu.hardware.qsh_geofence-V1-ndk_platform",
-                "libutils",
-                "libcutils",
-                "liblog",
-                "libgps.utils",
-                "libsnsapi",
-                "libqmi_encdec",
-                "libqmi_cci",
-                "libqsh_geofence",
-                "libqsh_utils",
-                "libprotobuf-cpp-lite-3.9.1-vendorcompat",
-                "libbase",
-                "libhardware",
-                "libbinder_ndk",
-                "libbinder",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    relative_install_path: "hw",
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "vendor.meizu.hardware.tiktap_hidl@1.0-service",
-    owner: "meizu",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/hw/vendor.meizu.hardware.tiktap_hidl@1.0-service",
-            ],
-            shared_libs: [
-                "vendor.meizu.hardware.tiktap_hidl@1.0",
-                "libhardware",
-                "libhidlbase",
-                "libutils",
-                "liblog",
                 "libc++",
                 "libc",
                 "libm",
@@ -54969,72 +54458,6 @@ cc_prebuilt_binary {
                 "vendor.rongcard.hardware.eid_rk@1.0",
                 "libc++",
                 "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    relative_install_path: "hw",
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "vendor.xingji.hardware.biometrics.face@1.0-service",
-    owner: "meizu",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/hw/vendor.xingji.hardware.biometrics.face@1.0-service",
-            ],
-            shared_libs: [
-                "libbase",
-                "libc",
-                "libcutils",
-                "libdmabufheap",
-                "libhidlbase",
-                "libion",
-                "liblog",
-                "libutils",
-                "android.hardware.biometrics.face@1.0",
-                "vendor.xingji.hardware.biometrics.face@1.0",
-                "libc++",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    relative_install_path: "hw",
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "vendor.xingji.hardware.qsee.store@1.0-service",
-    owner: "meizu",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/hw/vendor.xingji.hardware.qsee.store@1.0-service",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "libutils",
-                "liblog",
-                "libc",
-                "libcutils",
-                "libdmabufheap",
-                "libion",
-                "vendor.xingji.hardware.qsee.store@1.0",
-                "libc++",
                 "libm",
                 "libdl",
             ],
@@ -56753,36 +56176,6 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-    name: "qteedebugd",
-    owner: "meizu",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/qteedebugd",
-            ],
-            shared_libs: [
-                "libbase",
-                "libc",
-                "libcutils",
-                "libgflags",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libc++",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
     name: "qti",
     owner: "meizu",
     target: {
@@ -57101,36 +56494,6 @@ cc_prebuilt_binary {
                 "libminkdescriptor",
                 "libc++",
                 "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "rpmbd",
-    owner: "meizu",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/rpmbd",
-            ],
-            shared_libs: [
-                "libbase",
-                "libc",
-                "libcutils",
-                "libhidlbase",
-                "liblog",
-                "libminkdescriptor",
-                "libutils",
-                "libc++",
                 "libm",
                 "libdl",
             ],
