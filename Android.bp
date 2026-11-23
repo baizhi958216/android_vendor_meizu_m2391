@@ -35263,7 +35263,7 @@ cc_prebuilt_binary {
                 "libnl",
                 "libcutils",
                 "liblog",
-                "libwifi-hal-qcom_m2391",
+                "libwifi-hal-qcom",
                 "libhardware_legacy",
                 "libc++",
                 "libc",
