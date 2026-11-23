@@ -34,7 +34,6 @@ PRODUCT_COPY_FILES += \
     vendor/meizu/m2391/proprietary/vendor/bin/init.qti.media.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.qti.media.sh \
     vendor/meizu/m2391/proprietary/vendor/bin/init.qti.qcv.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.qti.qcv.sh \
     vendor/meizu/m2391/proprietary/vendor/bin/init.qti.write.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.qti.write.sh \
-    vendor/meizu/m2391/proprietary/vendor/bin/qca6234-service.sh:$(TARGET_COPY_OUT_VENDOR)/bin/qca6234-service.sh \
     vendor/meizu/m2391/proprietary/vendor/bin/qtigetprop:$(TARGET_COPY_OUT_VENDOR)/bin/qtigetprop \
     vendor/meizu/m2391/proprietary/vendor/bin/qtisetprop:$(TARGET_COPY_OUT_VENDOR)/bin/qtisetprop \
     vendor/meizu/m2391/proprietary/vendor/bin/system_dlkm_modprobe.sh:$(TARGET_COPY_OUT_VENDOR)/bin/system_dlkm_modprobe.sh \
@@ -79,12 +78,9 @@ PRODUCT_COPY_FILES += \
     vendor/meizu/m2391/proprietary/vendor/etc/acdbdata/nn_vad_models/fai__3.0.0_0.0__eai_1.36_enpu2.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_vad_models/fai__3.0.0_0.0__eai_1.36_enpu2.pmd \
     vendor/meizu/m2391/proprietary/vendor/etc/acdbdata/nn_vad_models/fai__3.0.0_0.0__eai_2.10_enpuv3.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_vad_models/fai__3.0.0_0.0__eai_2.10_enpuv3.pmd \
     vendor/meizu/m2391/proprietary/vendor/etc/apdr.conf:$(TARGET_COPY_OUT_VENDOR)/etc/apdr.conf \
-    vendor/meizu/m2391/proprietary/vendor/etc/audio/sku_kalama/MicSealingTest.wav:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_kalama/MicSealingTest.wav \
-    vendor/meizu/m2391/proprietary/vendor/etc/audio/sku_kalama/RecNoise.wav:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_kalama/RecNoise.wav \
     vendor/meizu/m2391/proprietary/vendor/etc/audio/sku_kalama/audio_effects.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_kalama/audio_effects.conf \
     vendor/meizu/m2391/proprietary/vendor/etc/audio/sku_kalama/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_kalama/audio_effects.xml \
     vendor/meizu/m2391/proprietary/vendor/etc/audio/sku_kalama/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_kalama/audio_policy_configuration.xml \
-    vendor/meizu/m2391/proprietary/vendor/etc/audio/sku_kalama/factory_test.wav:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_kalama/factory_test.wav \
     vendor/meizu/m2391/proprietary/vendor/etc/audio/sku_kalama/mixer_paths_kalama_cdp.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_kalama/mixer_paths_kalama_cdp.xml \
     vendor/meizu/m2391/proprietary/vendor/etc/audio/sku_kalama/mixer_paths_kalama_cdp_apq.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_kalama/mixer_paths_kalama_cdp_apq.xml \
     vendor/meizu/m2391/proprietary/vendor/etc/audio/sku_kalama/mixer_paths_kalama_cdp_wsa883x.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_kalama/mixer_paths_kalama_cdp_wsa883x.xml \
@@ -100,7 +96,6 @@ PRODUCT_COPY_FILES += \
     vendor/meizu/m2391/proprietary/vendor/etc/audio/sku_kalama/resourcemanager_kalama_mtp_apq.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_kalama/resourcemanager_kalama_mtp_apq.xml \
     vendor/meizu/m2391/proprietary/vendor/etc/audio/sku_kalama/resourcemanager_kalama_qrd.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_kalama/resourcemanager_kalama_qrd.xml \
     vendor/meizu/m2391/proprietary/vendor/etc/audio/sku_kalama/resourcemanager_meizu_stub.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_kalama/resourcemanager_meizu_stub.xml \
-    vendor/meizu/m2391/proprietary/vendor/etc/audio/sku_kalama/silent-3sec.wav:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_kalama/silent-3sec.wav \
     vendor/meizu/m2391/proprietary/vendor/etc/audio/sku_kalama_qssi/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_kalama_qssi/audio_policy_configuration.xml \
     vendor/meizu/m2391/proprietary/vendor/etc/audio_policy_volumes.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_volumes.xml \
     vendor/meizu/m2391/proprietary/vendor/etc/backend_conf.xml:$(TARGET_COPY_OUT_VENDOR)/etc/backend_conf.xml \
@@ -183,9 +178,6 @@ PRODUCT_COPY_FILES += \
     vendor/meizu/m2391/proprietary/vendor/etc/eva/facedetection/model3.dat:$(TARGET_COPY_OUT_VENDOR)/etc/eva/facedetection/model3.dat \
     vendor/meizu/m2391/proprietary/vendor/etc/excluded-input-devices.xml:$(TARGET_COPY_OUT_VENDOR)/etc/excluded-input-devices.xml \
     vendor/meizu/m2391/proprietary/vendor/etc/external_camera_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/external_camera_config.xml \
-    vendor/meizu/m2391/proprietary/vendor/etc/ftm_test_config:$(TARGET_COPY_OUT_VENDOR)/etc/ftm_test_config \
-    vendor/meizu/m2391/proprietary/vendor/etc/ftm_test_config_kalama-grd-snd-card:$(TARGET_COPY_OUT_VENDOR)/etc/ftm_test_config_kalama-grd-snd-card \
-    vendor/meizu/m2391/proprietary/vendor/etc/ftm_test_config_kalama-qrd-snd-card:$(TARGET_COPY_OUT_VENDOR)/etc/ftm_test_config_kalama-qrd-snd-card \
     vendor/meizu/m2391/proprietary/vendor/etc/gnss_antenna_info.conf:$(TARGET_COPY_OUT_VENDOR)/etc/gnss_antenna_info.conf \
     vendor/meizu/m2391/proprietary/vendor/etc/gpfspath_oem_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gpfspath_oem_config.xml \
     vendor/meizu/m2391/proprietary/vendor/etc/gps.conf:$(TARGET_COPY_OUT_VENDOR)/etc/gps.conf \
@@ -193,7 +185,6 @@ PRODUCT_COPY_FILES += \
     vendor/meizu/m2391/proprietary/vendor/etc/hostapd/hostapd.accept:$(TARGET_COPY_OUT_VENDOR)/etc/hostapd/hostapd.accept \
     vendor/meizu/m2391/proprietary/vendor/etc/hostapd/hostapd.deny:$(TARGET_COPY_OUT_VENDOR)/etc/hostapd/hostapd.deny \
     vendor/meizu/m2391/proprietary/vendor/etc/hostapd/hostapd_default.conf:$(TARGET_COPY_OUT_VENDOR)/etc/hostapd/hostapd_default.conf \
-    vendor/meizu/m2391/proprietary/vendor/etc/iAmCdRom.iso:$(TARGET_COPY_OUT_VENDOR)/etc/iAmCdRom.iso \
     vendor/meizu/m2391/proprietary/vendor/etc/init/android.hardware.bluetooth@1.1-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.bluetooth@1.1-service-qti.rc \
     vendor/meizu/m2391/proprietary/vendor/etc/init/android.hardware.camera.provider@2.4-external-service.m2391.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.camera.provider@2.4-external-service.m2391.rc \
     vendor/meizu/m2391/proprietary/vendor/etc/init/android.hardware.drm-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm-service.widevine.rc \
@@ -202,11 +193,7 @@ PRODUCT_COPY_FILES += \
     vendor/meizu/m2391/proprietary/vendor/etc/init/android.hardware.gnss-aidl-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gnss-aidl-service-qti.rc \
     vendor/meizu/m2391/proprietary/vendor/etc/init/android.hardware.identity-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.identity-service-qti.rc \
     vendor/meizu/m2391/proprietary/vendor/etc/init/android.hardware.media.omx@1.0-service.m2391.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.media.omx@1.0-service.m2391.rc \
-    vendor/meizu/m2391/proprietary/vendor/etc/init/android.hardware.power-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.power-service.rc \
     vendor/meizu/m2391/proprietary/vendor/etc/init/android.hardware.security.keymint-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.security.keymint-service-qti.rc \
-    vendor/meizu/m2391/proprietary/vendor/etc/init/android.hardware.thermal@2.0-service.qti-v2.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.thermal@2.0-service.qti-v2.rc \
-    vendor/meizu/m2391/proprietary/vendor/etc/init/android.hardware.wifi.supplicant-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.wifi.supplicant-service.rc \
-    vendor/meizu/m2391/proprietary/vendor/etc/init/android.hardware.wifi@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.wifi@1.0-service.rc \
     vendor/meizu/m2391/proprietary/vendor/etc/init/cnd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/cnd.rc \
     vendor/meizu/m2391/proprietary/vendor/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc \
     vendor/meizu/m2391/proprietary/vendor/etc/init/dataadpl.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dataadpl.rc \
@@ -217,8 +204,6 @@ PRODUCT_COPY_FILES += \
     vendor/meizu/m2391/proprietary/vendor/etc/init/dpmQmiMgr.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dpmQmiMgr.rc \
     vendor/meizu/m2391/proprietary/vendor/etc/init/feature_enabler_client.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/feature_enabler_client.rc \
     vendor/meizu/m2391/proprietary/vendor/etc/init/fix.1347671.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/fix.1347671.rc \
-    vendor/meizu/m2391/proprietary/vendor/etc/init/hostapd.android.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hostapd.android.rc \
-    vendor/meizu/m2391/proprietary/vendor/etc/init/hw/init.qcom.factory.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.qcom.factory.rc \
     vendor/meizu/m2391/proprietary/vendor/etc/init/hw/init.qcom.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.qcom.rc \
     vendor/meizu/m2391/proprietary/vendor/etc/init/hw/init.qcom.usb.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.qcom.usb.rc \
     vendor/meizu/m2391/proprietary/vendor/etc/init/hw/init.qti.kernel.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.qti.kernel.rc \
@@ -255,7 +240,6 @@ PRODUCT_COPY_FILES += \
     vendor/meizu/m2391/proprietary/vendor/etc/init/qmipriod.debug.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qmipriod.debug.rc \
     vendor/meizu/m2391/proprietary/vendor/etc/init/qmipriod.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qmipriod.rc \
     vendor/meizu/m2391/proprietary/vendor/etc/init/qseecomd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qseecomd.rc \
-    vendor/meizu/m2391/proprietary/vendor/etc/init/qttestservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qttestservice.rc \
     vendor/meizu/m2391/proprietary/vendor/etc/init/qvrd_vndr.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qvrd_vndr.rc \
     vendor/meizu/m2391/proprietary/vendor/etc/init/shsusrd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/shsusrd.rc \
     vendor/meizu/m2391/proprietary/vendor/etc/init/ssgtzd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ssgtzd.rc \
@@ -285,7 +269,6 @@ PRODUCT_COPY_FILES += \
     vendor/meizu/m2391/proprietary/vendor/etc/init/vendor.qti.hardware.display.composer-service.m2391.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.display.composer-service.m2391.rc \
     vendor/meizu/m2391/proprietary/vendor/etc/init/vendor.qti.hardware.display.demura-service.m2391.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.display.demura-service.m2391.rc \
     vendor/meizu/m2391/proprietary/vendor/etc/init/vendor.qti.hardware.dsp@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.dsp@1.0-service.rc \
-    vendor/meizu/m2391/proprietary/vendor/etc/init/vendor.qti.hardware.factory@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.factory@1.0-service.rc \
     vendor/meizu/m2391/proprietary/vendor/etc/init/vendor.qti.hardware.iop@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.iop@2.0-service.rc \
     vendor/meizu/m2391/proprietary/vendor/etc/init/vendor.qti.hardware.lights.service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.lights.service.rc \
     vendor/meizu/m2391/proprietary/vendor/etc/init/vendor.qti.hardware.limits-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.limits-service.rc \
@@ -314,8 +297,6 @@ PRODUCT_COPY_FILES += \
     vendor/meizu/m2391/proprietary/vendor/etc/izat.conf:$(TARGET_COPY_OUT_VENDOR)/etc/izat.conf \
     vendor/meizu/m2391/proprietary/vendor/etc/libnfc-SN220_19_2MHZ.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-SN220_19_2MHZ.conf \
     vendor/meizu/m2391/proprietary/vendor/etc/libnfc-SN220_38_4MHZ.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-SN220_38_4MHZ.conf \
-    vendor/meizu/m2391/proprietary/vendor/etc/libnfc-hal-st-519_mtp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-hal-st-519_mtp.conf \
-    vendor/meizu/m2391/proprietary/vendor/etc/libnfc-hal-st.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-hal-st.conf \
     vendor/meizu/m2391/proprietary/vendor/etc/libnfc-mtp-SN100.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-mtp-SN100.conf \
     vendor/meizu/m2391/proprietary/vendor/etc/libnfc-mtp-SN100_38_4MHZ.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-mtp-SN100_38_4MHZ.conf \
     vendor/meizu/m2391/proprietary/vendor/etc/libnfc-nci.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci.conf \
@@ -345,25 +326,13 @@ PRODUCT_COPY_FILES += \
     vendor/meizu/m2391/proprietary/vendor/etc/media_codecs_google_c2_video.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_c2_video.xml \
     vendor/meizu/m2391/proprietary/vendor/etc/media_codecs_google_video_le.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_video_le.xml \
     vendor/meizu/m2391/proprietary/vendor/etc/media_codecs_kalama.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_kalama.xml \
-    vendor/meizu/m2391/proprietary/vendor/etc/media_codecs_kalama_iot.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_kalama_iot.xml \
-    vendor/meizu/m2391/proprietary/vendor/etc/media_codecs_kalama_iot_v1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_kalama_iot_v1.xml \
-    vendor/meizu/m2391/proprietary/vendor/etc/media_codecs_kalama_iot_v1_vendor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_kalama_iot_v1_vendor.xml \
-    vendor/meizu/m2391/proprietary/vendor/etc/media_codecs_kalama_iot_vendor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_kalama_iot_vendor.xml \
     vendor/meizu/m2391/proprietary/vendor/etc/media_codecs_kalama_vendor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_kalama_vendor.xml \
     vendor/meizu/m2391/proprietary/vendor/etc/media_codecs_performance_kalama.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance_kalama.xml \
-    vendor/meizu/m2391/proprietary/vendor/etc/media_codecs_performance_kalama_iot.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance_kalama_iot.xml \
-    vendor/meizu/m2391/proprietary/vendor/etc/media_codecs_performance_kalama_iot_v1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance_kalama_iot_v1.xml \
-    vendor/meizu/m2391/proprietary/vendor/etc/media_codecs_performance_kalama_iot_v1_vendor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance_kalama_iot_v1_vendor.xml \
-    vendor/meizu/m2391/proprietary/vendor/etc/media_codecs_performance_kalama_iot_vendor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance_kalama_iot_vendor.xml \
     vendor/meizu/m2391/proprietary/vendor/etc/media_codecs_performance_kalama_vendor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance_kalama_vendor.xml \
     vendor/meizu/m2391/proprietary/vendor/etc/media_kalama/video_system_specs.json:$(TARGET_COPY_OUT_VENDOR)/etc/media_kalama/video_system_specs.json \
-    vendor/meizu/m2391/proprietary/vendor/etc/media_kalama_iot/video_system_specs.json:$(TARGET_COPY_OUT_VENDOR)/etc/media_kalama_iot/video_system_specs.json \
-    vendor/meizu/m2391/proprietary/vendor/etc/media_kalama_iot_v1/video_system_specs.json:$(TARGET_COPY_OUT_VENDOR)/etc/media_kalama_iot_v1/video_system_specs.json \
     vendor/meizu/m2391/proprietary/vendor/etc/media_profiles.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles.xml \
     vendor/meizu/m2391/proprietary/vendor/etc/media_profiles_V1_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_V1_0.xml \
     vendor/meizu/m2391/proprietary/vendor/etc/media_profiles_kalama.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_kalama.xml \
-    vendor/meizu/m2391/proprietary/vendor/etc/media_profiles_kalama_iot.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_kalama_iot.xml \
-    vendor/meizu/m2391/proprietary/vendor/etc/media_profiles_kalama_iot_v1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_kalama_iot_v1.xml \
     vendor/meizu/m2391/proprietary/vendor/etc/meizu_charging.ini:$(TARGET_COPY_OUT_VENDOR)/etc/meizu_charging.ini \
     vendor/meizu/m2391/proprietary/vendor/etc/models/acd/event.eai:$(TARGET_COPY_OUT_VENDOR)/etc/models/acd/event.eai \
     vendor/meizu/m2391/proprietary/vendor/etc/models/acd/music.eai:$(TARGET_COPY_OUT_VENDOR)/etc/models/acd/music.eai \
@@ -382,10 +351,7 @@ PRODUCT_COPY_FILES += \
     vendor/meizu/m2391/proprietary/vendor/etc/perf/targetsysnodesconfigs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/targetsysnodesconfigs.xml \
     vendor/meizu/m2391/proprietary/vendor/etc/perf/testcommonresourceconfigs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/testcommonresourceconfigs.xml \
     vendor/meizu/m2391/proprietary/vendor/etc/perf/testtargetresourceconfigs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/testtargetresourceconfigs.xml \
-    vendor/meizu/m2391/proprietary/vendor/etc/permissions/android.hardware.keystore.app_attest_key.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.keystore.app_attest_key.xml \
-    vendor/meizu/m2391/proprietary/vendor/etc/permissions/android.hardware.light.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.light.xml \
     vendor/meizu/m2391/proprietary/vendor/etc/permissions/android.hardware.location.gps.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.location.gps.xml \
-    vendor/meizu/m2391/proprietary/vendor/etc/permissions/android.software.device_id_attestation.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.device_id_attestation.xml \
     vendor/meizu/m2391/proprietary/vendor/etc/permissions/android.software.ipsec_tunnels.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.ipsec_tunnels.xml \
     vendor/meizu/m2391/proprietary/vendor/etc/permissions/android.software.midi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.midi.xml \
     vendor/meizu/m2391/proprietary/vendor/etc/permissions/android.software.opengles.deqp.level.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.opengles.deqp.level.xml \
@@ -408,7 +374,6 @@ PRODUCT_COPY_FILES += \
     vendor/meizu/m2391/proprietary/vendor/etc/permissions/sku_kalama/android.hardware.sensor.stepdetector.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/sku_kalama/android.hardware.sensor.stepdetector.xml \
     vendor/meizu/m2391/proprietary/vendor/etc/permissions/vendor-qti-hardware-sensorscalibrate.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/vendor-qti-hardware-sensorscalibrate.xml \
     vendor/meizu/m2391/proprietary/vendor/etc/permissions/vendor.qti.dcf.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/vendor.qti.dcf.xml \
-    vendor/meizu/m2391/proprietary/vendor/etc/permissions/vendor.qti.hardware.factory.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/vendor.qti.hardware.factory.xml \
     vendor/meizu/m2391/proprietary/vendor/etc/powerhint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.xml \
     vendor/meizu/m2391/proprietary/vendor/etc/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt \
     vendor/meizu/m2391/proprietary/vendor/etc/pwr/AODPowerOptFeature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/pwr/AODPowerOptFeature.xml \
@@ -864,48 +829,6 @@ PRODUCT_COPY_FILES += \
     vendor/meizu/m2391/proprietary/vendor/gpu/kbc/unified_kbcs_32.bin:$(TARGET_COPY_OUT_VENDOR)/gpu/kbc/unified_kbcs_32.bin \
     vendor/meizu/m2391/proprietary/vendor/gpu/kbc/unified_kbcs_64.bin:$(TARGET_COPY_OUT_VENDOR)/gpu/kbc/unified_kbcs_64.bin \
     vendor/meizu/m2391/proprietary/vendor/gpu/kbc/unified_ksqs.bin:$(TARGET_COPY_OUT_VENDOR)/gpu/kbc/unified_ksqs.bin \
-    vendor/meizu/m2391/proprietary/vendor/lib/camera/com.qti.sensormodule.lce_s5k5e9yx04_front.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.sensormodule.lce_s5k5e9yx04_front.bin \
-    vendor/meizu/m2391/proprietary/vendor/lib/camera/com.qti.sensormodule.lce_s5k5e9yx04_rear_main.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.sensormodule.lce_s5k5e9yx04_rear_main.bin \
-    vendor/meizu/m2391/proprietary/vendor/lib/camera/com.qti.sensormodule.qtech_imx766_i3c.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.sensormodule.qtech_imx766_i3c.bin \
-    vendor/meizu/m2391/proprietary/vendor/lib/camera/com.qti.sensormodule.qtech_imx766_triple.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.sensormodule.qtech_imx766_triple.bin \
-    vendor/meizu/m2391/proprietary/vendor/lib/camera/com.qti.sensormodule.qtech_ov64b40.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.sensormodule.qtech_ov64b40.bin \
-    vendor/meizu/m2391/proprietary/vendor/lib/camera/com.qti.sensormodule.qtech_s5k3m5.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.sensormodule.qtech_s5k3m5.bin \
-    vendor/meizu/m2391/proprietary/vendor/lib/camera/com.qti.sensormodule.qti_tpg0.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.sensormodule.qti_tpg0.bin \
-    vendor/meizu/m2391/proprietary/vendor/lib/camera/com.qti.sensormodule.qti_tpg1.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.sensormodule.qti_tpg1.bin \
-    vendor/meizu/m2391/proprietary/vendor/lib/camera/com.qti.sensormodule.qti_tpg2.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.sensormodule.qti_tpg2.bin \
-    vendor/meizu/m2391/proprietary/vendor/lib/camera/com.qti.sensormodule.semco_imx363.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.sensormodule.semco_imx363.bin \
-    vendor/meizu/m2391/proprietary/vendor/lib/camera/com.qti.sensormodule.shinetech_imx688.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.sensormodule.shinetech_imx688.bin \
-    vendor/meizu/m2391/proprietary/vendor/lib/camera/com.qti.sensormodule.shinetech_s5k3p9sx.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.sensormodule.shinetech_s5k3p9sx.bin \
-    vendor/meizu/m2391/proprietary/vendor/lib/camera/com.qti.sensormodule.shinetech_s5k5e9yx04.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.sensormodule.shinetech_s5k5e9yx04.bin \
-    vendor/meizu/m2391/proprietary/vendor/lib/camera/com.qti.sensormodule.shinetech_s5kgd2sp03.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.sensormodule.shinetech_s5kgd2sp03.bin \
-    vendor/meizu/m2391/proprietary/vendor/lib/camera/com.qti.sensormodule.shinetech_s5kgn5sp.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.sensormodule.shinetech_s5kgn5sp.bin \
-    vendor/meizu/m2391/proprietary/vendor/lib/camera/com.qti.sensormodule.shinetech_s5khp1s.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.sensormodule.shinetech_s5khp1s.bin \
-    vendor/meizu/m2391/proprietary/vendor/lib/camera/com.qti.sensormodule.shinetech_s5kjn1sq03.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.sensormodule.shinetech_s5kjn1sq03.bin \
-    vendor/meizu/m2391/proprietary/vendor/lib/camera/com.qti.sensormodule.shinetech_s5kjn1sq05.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.sensormodule.shinetech_s5kjn1sq05.bin \
-    vendor/meizu/m2391/proprietary/vendor/lib/camera/com.qti.sensormodule.sunny_s5k33dxx.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.sensormodule.sunny_s5k33dxx.bin \
-    vendor/meizu/m2391/proprietary/vendor/lib/camera/com.qti.sensormodule.sunny_s5k33dxx_front.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.sensormodule.sunny_s5k33dxx_front.bin \
-    vendor/meizu/m2391/proprietary/vendor/lib/camera/com.qti.tuned.default.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.tuned.default.bin \
-    vendor/meizu/m2391/proprietary/vendor/lib/camera/com.qti.tuned.qtech_imx766.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.tuned.qtech_imx766.bin \
-    vendor/meizu/m2391/proprietary/vendor/lib/camera/com.qti.tuned.qtech_ov64b40.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.tuned.qtech_ov64b40.bin \
-    vendor/meizu/m2391/proprietary/vendor/lib/camera/com.qti.tuned.qtech_s5k3m5.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.tuned.qtech_s5k3m5.bin \
-    vendor/meizu/m2391/proprietary/vendor/lib/camera/com.qti.tuned.rayprus_s5kgn5sp03.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.tuned.rayprus_s5kgn5sp03.bin \
-    vendor/meizu/m2391/proprietary/vendor/lib/camera/com.qti.tuned.rayprus_s5kgn5sp03_st.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.tuned.rayprus_s5kgn5sp03_st.bin \
-    vendor/meizu/m2391/proprietary/vendor/lib/camera/com.qti.tuned.semco_imx363.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.tuned.semco_imx363.bin \
-    vendor/meizu/m2391/proprietary/vendor/lib/camera/com.qti.tuned.shinetech_imx688.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.tuned.shinetech_imx688.bin \
-    vendor/meizu/m2391/proprietary/vendor/lib/camera/com.qti.tuned.shinetech_s5k3p9sx04.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.tuned.shinetech_s5k3p9sx04.bin \
-    vendor/meizu/m2391/proprietary/vendor/lib/camera/com.qti.tuned.shinetech_s5k5e9yx04.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.tuned.shinetech_s5k5e9yx04.bin \
-    vendor/meizu/m2391/proprietary/vendor/lib/camera/com.qti.tuned.shinetech_s5kgd2sp03.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.tuned.shinetech_s5kgd2sp03.bin \
-    vendor/meizu/m2391/proprietary/vendor/lib/camera/com.qti.tuned.shinetech_s5khp1s.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.tuned.shinetech_s5khp1s.bin \
-    vendor/meizu/m2391/proprietary/vendor/lib/camera/com.qti.tuned.shinetech_s5kjn1sq03.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.tuned.shinetech_s5kjn1sq03.bin \
-    vendor/meizu/m2391/proprietary/vendor/lib/camera/com.qti.tuned.shinetech_s5kjn1sq05.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.tuned.shinetech_s5kjn1sq05.bin \
-    vendor/meizu/m2391/proprietary/vendor/lib/camera/com.qti.tuned.sm8550_lce_S5K5E9YX04_rear_main.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.tuned.sm8550_lce_S5K5E9YX04_rear_main.bin \
-    vendor/meizu/m2391/proprietary/vendor/lib/camera/com.qti.tuned.tpg.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.tuned.tpg.bin \
-    vendor/meizu/m2391/proprietary/vendor/lib/camera/fdconfigpreview.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/fdconfigpreview.bin \
-    vendor/meizu/m2391/proprietary/vendor/lib/camera/fdconfigpreviewlite.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/fdconfigpreviewlite.bin \
-    vendor/meizu/m2391/proprietary/vendor/lib/camera/fdconfigsecure.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/fdconfigsecure.bin \
-    vendor/meizu/m2391/proprietary/vendor/lib/camera/fdconfigvideo.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/fdconfigvideo.bin \
-    vendor/meizu/m2391/proprietary/vendor/lib/camera/fdconfigvideolite.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/fdconfigvideolite.bin \
-    vendor/meizu/m2391/proprietary/vendor/lib/camera/imx688.pb:$(TARGET_COPY_OUT_VENDOR)/lib/camera/imx688.pb \
     vendor/meizu/m2391/proprietary/vendor/lib64/camera/arcsoft_calibration_uw.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/arcsoft_calibration_uw.bin \
     vendor/meizu/m2391/proprietary/vendor/lib64/camera/arcsoft_calibration_wt.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/arcsoft_calibration_wt.bin \
     vendor/meizu/m2391/proprietary/vendor/lib64/camera/arcsoft_dc_calibration_t.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/arcsoft_dc_calibration_t.bin \
@@ -1143,7 +1066,6 @@ PRODUCT_PACKAGES += \
     libVkLayer_ADRENO_qprofiler \
     libq3dtools_adreno \
     libq3dtools_esx \
-    ftm_fm_lib \
     android.hardware.bluetooth.audio-impl-qti \
     android.hardware.bluetooth@1.0-impl-qti \
     android.hardware.bluetooth@1.1-impl-qti \
@@ -1158,7 +1080,6 @@ PRODUCT_PACKAGES += \
     com.qti.chi.offline \
     com.qti.chi.override \
     gralloc.default \
-    power.default \
     vendor.qti.esepowermanager@1.1-impl \
     vendor.qti.hardware.alarm@1.0-impl \
     vendor.qti.hardware.bluetooth_audio@2.0-impl \
@@ -1504,8 +1425,6 @@ PRODUCT_PACKAGES += \
     libqtikeymint \
     libqtjsonhelper \
     libqtnodes \
-    libqttestclient \
-    libqttestservice \
     libqvr_cam_cdsp_driver_stub \
     libqvr_cdsp_driver_stub \
     libqvr_eyetracking_plugin \
@@ -1610,14 +1529,12 @@ PRODUCT_PACKAGES += \
     libvpplibrary \
     libvpptestutils \
     libwifi-hal-ctrl \
-    libwifi-hal-qcom_m2391 \
     libwms \
     libwqe \
     libwvaidl \
     libxml \
     libxtadapter \
     nfc_nci.nqx.default.hw \
-    nfc_nci.st21nfc.st \
     qcrilInterfaces \
     qcrilMarshal \
     qcrilNrQmiModule \
@@ -1671,7 +1588,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.gnss-V5-ndk \
     vendor.qti.gnss-service \
     vendor.qti.hardware.alarm@1.0 \
-    vendor.qti.hardware.automotive.vehicle@1.0 \
     vendor.qti.hardware.bluetooth_sar@1.0 \
     vendor.qti.hardware.bluetooth_sar@1.1 \
     vendor.qti.hardware.bttpi-V2-ndk \
@@ -1801,29 +1717,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.qspmhal@1.0 \
     vendor.qti.voiceprint@1.0 \
     vendor.rongcard.hardware.eid_rk@1.0 \
-    libeai_fixed_32 \
     libstagefright_foundation-meizu \
-    libstagefright_soft_aacdec \
-    libstagefright_soft_aacenc \
-    libstagefright_soft_amrdec \
-    libstagefright_soft_amrnbenc \
-    libstagefright_soft_amrwbenc \
-    libstagefright_soft_avcdec \
-    libstagefright_soft_avcenc \
-    libstagefright_soft_flacdec \
-    libstagefright_soft_flacenc \
-    libstagefright_soft_g711dec \
-    libstagefright_soft_gsmdec \
-    libstagefright_soft_hevcdec \
-    libstagefright_soft_mp3dec \
-    libstagefright_soft_mpeg2dec \
-    libstagefright_soft_mpeg4dec \
-    libstagefright_soft_mpeg4enc \
-    libstagefright_soft_opusdec \
-    libstagefright_soft_rawdec \
-    libstagefright_soft_vorbisdec \
-    libstagefright_soft_vpxdec \
-    libstagefright_soft_vpxenc \
     libstagefright_omx_vndk \
     com.arcsoft.node.smooth_transition \
     com.arcsoft.node.supernightraw \
@@ -1861,7 +1755,6 @@ PRODUCT_PACKAGES += \
     libarcsoft_triple_zoomtranslator \
     libaudio_log_utils \
     libc++_shared \
-    libcert_parse.wpa_s \
     libcrussp \
     libdepthcomputation \
     libeai_fixed \
@@ -1870,7 +1763,6 @@ PRODUCT_PACKAGES += \
     libembmsservice \
     libhistogram \
     libipanat \
-    libkeystore-engine-wifi-hidl-v33 \
     liblearningmodule \
     liblightninglaunches \
     liblmthermallistner \
@@ -1908,7 +1800,6 @@ PRODUCT_PACKAGES += \
     libqesdk2_0 \
     libqfp-service \
     libqsh_utils \
-    libqsh_wifi_test \
     libqti-qesdk-secure \
     libqtigefar \
     libqtivibratoreffect \
@@ -1964,8 +1855,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.ListenSoundModel@1.0 \
     vendor.qti.hardware.embmssl@1.0 \
     vendor.qti.hardware.embmssl@1.1 \
-    vendor.qti.hardware.factory@1.0 \
-    vendor.qti.hardware.factory@1.1 \
     vendor.qti.hardware.limits@1.0 \
     vendor.qti.hardware.limits@1.1 \
     vendor.qti.hardware.limits@1.2 \
@@ -1980,7 +1869,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.qesdhal@1.1 \
     vendor.qti.qesdhal@1.2 \
     vendor.qti.qesdhal@1.3 \
-    vendor.xj.hardware.wifi.supplicant-V1-ndk \
     vendor_lib_rfsa_adsp_bm3a68v08s11n29_bin \
     vendor_lib_rfsa_adsp_bm3a68v08s11n30_bin \
     vendor_lib_rfsa_adsp_bm3a68v08s11n35_bin \
@@ -2081,25 +1969,13 @@ PRODUCT_PACKAGES += \
     pasrservice \
     powermodule_java \
     ATFWD-daemon \
-    AnchorTest \
     GPTEE_Sample_client \
     KmInstallKeybox \
-    PalTest \
-    PktRspTest \
     StoreKeybox \
     WVStoreKeybox \
     adpl \
     adsprpcd \
-    agmcap \
-    agmcompresscap \
-    agmcompressplay \
-    agmhostless \
-    agmplay \
     agmvoiceui \
-    ar_util_in_test_example \
-    athdiag \
-    audiodsd2pcmtest \
-    audioflacapp \
     battery_stats \
     camxoverridesettings \
     ccid_daemon_nr \
@@ -2107,58 +1983,38 @@ PRODUCT_PACKAGES += \
     cnd \
     cnss-daemon \
     cnss_diag \
-    compatibilitytest \
-    cplay \
     ctrlapp_dut \
-    debug-diag \
     diag-router \
-    diag_callback_sample \
-    diag_dci_sample \
-    diag_klog \
     diag_mdlog \
-    diag_socket_log \
-    diag_uart_log \
     diagcommd \
     dlsc \
     dpmQmiMgr \
     dspservice \
-    e_loop \
     edgnss-daemon \
     embmsslServer \
     engine-service \
-    f2managertest \
     fan_service \
     feature_enabler_client \
     fix.1347671 \
     fm_qsoc_patches \
     fmconfig \
-    fmfactorytest \
-    fmfactorytestserver \
-    ftmdaemon \
     gt_mp_test \
     hal_proxy_daemon \
     hdcp1prov \
     hdcp2p2prov \
-    hostapd_cli \
     android.hardware.bluetooth@1.1-service-qti \
     android.hardware.camera.provider@2.4-external-service \
     android.hardware.drm-service.widevine \
-    android.hardware.dumpstate-service.qti \
     android.hardware.gatekeeper@1.0-service-qti \
     android.hardware.gatekeeper@1.0-service-spu-qti \
     android.hardware.gnss-aidl-service-qti \
     android.hardware.keymaster@4.0-service-qti \
     android.hardware.keymaster@4.0-strongbox-service-qti \
     android.hardware.media.omx@1.0-service \
-    android.hardware.power-service \
     android.hardware.security.keymint-service-qti \
     android.hardware.security.keymint-service-spu-qti \
-    android.hardware.thermal@2.0-service.qti-v2 \
     android.hardware.uwb-service.nxp \
     android.hardware.weaver-service-spu-qti \
-    android.hardware.wifi@1.0-service \
-    capabilityconfigstoretest \
-    hostapd \
     pasrknob \
     qconfigservice \
     qcrilNrd \
@@ -2178,7 +2034,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.display.allocator-service \
     vendor.qti.hardware.display.composer-service \
     vendor.qti.hardware.display.demura-service \
-    vendor.qti.hardware.factory@1.0-service \
     vendor.qti.hardware.iop@2.0-service \
     vendor.qti.hardware.lights.service \
     vendor.qti.hardware.limits@1.2-service \
@@ -2193,7 +2048,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.psiclient@1.0-service \
     vendor.qti.secure_element@1.2-service \
     vendor.rongcard.hardware.eid_rk@1.0-service \
-    wpa_supplicant.m2391 \
     image_update \
     ims-dataservice-daemon \
     ims_rtp_daemon \
@@ -2205,24 +2059,15 @@ PRODUCT_PACKAGES += \
     loadalgo \
     loc_launcher \
     lowi-server \
-    mcs_test \
     mdm_helper \
     mdm_helper_proxy \
     meizu_charging_helper \
     mlid \
-    mm-audio-ftm \
-    mmid \
     mpower_manager \
     msm_irqbalance \
-    myftm \
-    nativechitest \
-    nativehaltest \
     netmgrd \
-    offcamtest \
-    osal_in_test_example \
     pd-mapper \
     phio \
-    pktlogconf \
     pm-proxy \
     pm-service \
     pm_ioctl_app \
@@ -2233,7 +2078,6 @@ PRODUCT_PACKAGES += \
     ppd \
     qcc-trd \
     qcc-vendor \
-    qconfigfunctest \
     qdcmss \
     qguard \
     qmi_test_mt_client_init_instance \
@@ -2246,28 +2090,21 @@ PRODUCT_PACKAGES += \
     qsap_qapeservice \
     qseecom_sample_client \
     qseecomd \
-    qsh_wifi_test \
     qti \
-    qttestclient \
-    qttestservice \
-    qvrcameratest \
     qvrdatacapture \
     qvrdatalogger \
     qvrdatauploader \
-    qvrservicetest \
     qwesd \
     rmt_storage \
     rpmbClient \
     sbridge \
     sensors.qti \
     shsusrd \
-    sigma_dut \
     slim_daemon \
     smartzram_tool \
     smcinvoke_example \
     smcinvoke_skeleton \
     smcinvoke_skeleton_cpp \
-    spectraltool \
     spu_install_keybox \
     sscrpcd \
     ssgqmigd \
@@ -2276,8 +2113,6 @@ PRODUCT_PACKAGES += \
     ssr_diag \
     ssr_setup \
     subsystem_ramdump \
-    sxrservicetest \
-    test_diag \
     tftp_server \
     thermal-engine-v2 \
     time_daemon \
@@ -2291,17 +2126,11 @@ PRODUCT_PACKAGES += \
     vendor.qti.qspmhal@1.0-service \
     vendor_cmd_tool \
     vmmgr \
-    vppcommonlibraryunittest \
-    vppipcunittest \
-    vpplibraryfunctionaltest \
-    vpplibraryunittest \
     vppservice \
-    vppserviceunittest \
     wdsdaemon \
     wfdhdcphalservice \
     wfdvndservice \
     wifidisplayhalservice \
     wifilearner \
-    wpa_cli \
     xtra-daemon \
     xtwifi-client

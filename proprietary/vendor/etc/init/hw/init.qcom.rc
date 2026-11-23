@@ -63,7 +63,6 @@ import /vendor/etc/init/hw/init.qti.ufs.rc
 import /vendor/etc/init/hw/init.qcom.usb.rc
 import /vendor/etc/init/hw/init.qcom.test.rc
 import /vendor/etc/init/hw/init.target.rc
-import /vendor/etc/init/hw/init.qcom.factory.rc
 #[#1139640] yujintao1@meizu
 import /vendor/etc/init/hw/init.fac.rc
 on early-init
@@ -572,7 +571,7 @@ service qmiproxy /system/bin/qmiproxy
     group radio diag
     disabled
 
-service vendor.wigig_supplicant /vendor/bin/hw/wpa_supplicant.m2391 \
+service vendor.wigig_supplicant /vendor/bin/hw/wpa_supplicant \
     -iwigig0 -Dnl80211 -c/data/vendor/wifi/wigig_supplicant.conf \
     -m/data/vendor/wifi/wigig_p2p_supplicant.conf \
     -O/data/vendor/wifi/wigig_sockets -dd \
