@@ -38768,3 +38768,65 @@ filegroup {
         "proprietary/vendor/overlay/WifiResTarget_spf.apk",
     ],
 }
+
+cc_prebuilt_library_shared {
+    name: "vendor.xingji.hardware.biometrics.face@1.0",
+    owner: "meizu",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/vendor.xingji.hardware.biometrics.face@1.0.so",
+            ],
+            shared_libs: [
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "vendor.xingji.hardware.biometrics.face@1.0-service",
+    owner: "meizu",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/hw/vendor.xingji.hardware.biometrics.face@1.0-service",
+            ],
+            shared_libs: [
+                "libbase",
+                "libc",
+                "libcutils",
+                "libdmabufheap",
+                "libhidlbase",
+                "libion",
+                "liblog",
+                "libutils",
+                "android.hardware.biometrics.face@1.0",
+                "vendor.xingji.hardware.biometrics.face@1.0",
+                "libc++",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    relative_install_path: "hw",
+    soc_specific: true,
+}

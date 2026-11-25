@@ -286,6 +286,7 @@ PRODUCT_COPY_FILES += \
     vendor/meizu/m2391/proprietary/vendor/etc/init/vendor.rongcard.hardware.eid_rk@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.rongcard.hardware.eid_rk@1.0-service.rc \
     vendor/meizu/m2391/proprietary/vendor/etc/init/vendor.sensors.qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.sensors.qti.rc \
     vendor/meizu/m2391/proprietary/vendor/etc/init/vendor.sensors.sscrpcd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.sensors.sscrpcd.rc \
+    vendor/meizu/m2391/proprietary/vendor/etc/init/vendor.xingji.hardware.biometrics.face@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xingji.hardware.biometrics.face@1.0-service.rc \
     vendor/meizu/m2391/proprietary/vendor/etc/init/vmmgr.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vmmgr.rc \
     vendor/meizu/m2391/proprietary/vendor/etc/init/vppservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vppservice.rc \
     vendor/meizu/m2391/proprietary/vendor/etc/init/wfdvndservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wfdvndservice.rc \
@@ -2016,6 +2017,8 @@ PRODUCT_PACKAGES += \
     vendor.qti.psiclient@1.0-service \
     vendor.qti.secure_element@1.2-service \
     vendor.rongcard.hardware.eid_rk@1.0-service \
+    vendor.xingji.hardware.biometrics.face@1.0 \
+    vendor.xingji.hardware.biometrics.face@1.0-service \
     image_update \
     ims-dataservice-daemon \
     ims_rtp_daemon \
